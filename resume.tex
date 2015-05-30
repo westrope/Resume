@@ -1,96 +1,223 @@
-% LaTeX file for resume 
-% This file uses the resume document class (res.cls)
+\documentclass [11pt,a4paper]{moderncv}
+\usepackage{multicol}
+\usepackage[scale=0.75]{geometry}
 
-\documentstyle{res} 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-\setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+\moderncvtheme[blue]{classic}
+% colors include blue, orange, green, red, purple, grey, and black
+% styles casual, classic, oldstyle, banking
 
-\begin{document} 
+%\nopagenumbers{} %used to remove line numbers
 
-\name{IAN WESTROPE\\[12pt]}     % the \\[12pt] adds a blank
-				        % line after name      
+%----------------------------------------
+% Personal Data
+%----------------------------------------
 
-\address{\bf  PRESENT ADDRESS\\514 S. Polk St.\\Moscow, ID 83843\\(509)-398-6256}
-\address{\bf CONTACT INFO \\ ian.westrope@gmail.com \\ https://github.com/westrope
-  \\Graduating May 16, 2015 }
-  
-                                  
-\begin{resume}
+\firstname{Ian}
+\lastname{Westrope}
+\title{Software Engineer}
+%\address{1529 Basin St SW}{} home address
+%\address{514 S Polk St}{Apt 5}{Moscow, ID 83843}
+\mobile{+1~(509)~398~6256}
+\email{ian.westrope@gmail.com}
+%\homepage{www.github.com}
+\social[github]{westrope}
 
-\section{JOB OBJECTIVE}          
-    To find an entry level position after graduation May 16, 2015.          
- 
-\section{EDUCATION}          
-    University of Idaho, Moscow, ID  \\        
-    Bachelors of Computer Science, May 2015   \\       
-    G.P.A. 3.12 \\ \\
-    Big Bend Community College, Moses Lake, WA \\
-    Associates Arts and Science, June 2010 \\
-    G.P.A. 3.70 
 
- 
-\section{EXPERIENCE \& PROJECTS}
-   \vspace{-0.1in}	
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Pool Manager} \>SplashZone City Pool     \>Summer 2010 - 2013\\
-                             \>Ephrata, WA
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-   Managed daily pool functions. Trained pool staff in lifeguarding skill
-   and safety. Reconciled money daily. Worked in customer service with pool
-   patrons.
-   \begin{tabbing}
-   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Unicon Development} \>Senior Design \> Fall 2014 - Present\\
-                          \>University of Idaho
-   \end{tabbing}\vspace{-20pt}
-   Contribute to open source language Unicon. Adding concurrency to
-   optimizing compiler. Project will complete in May 2015.
-   Website: http://unicon.sourceforge.net
-   \begin{tabbing}
-     \hspace{2.3in}\= \hspace{2.6in}\= \kill
-            {\bf Video Games \& Evolution } \> CS 404 \> Spring 2015 \\
-            \> Univeristy of Idaho
-   \end{tabbing}\vspace{-20pt}
-   Collaboration between computer scientists and biologists to create a tower defense game
-   with realistic evolution of the attacking creatures. Working on communication between
-   attacking creatures. Website: https://course.cs.uidaho.edu:444/wiki404/index.php/Main\_Page
- 
-\section{CLASSES}          
-Data Structures \\
-Analysis of Algorithms \\
-Operating Systems \\
-Object Oriented Design \\
-Software Engineering \\
-Compiler Design \\
-Database Design \\
-Evolutionary Computation \\
-Video Games \& Evolution \\
-Theory of Computation \\
-Computer Graphics  \\
-Technical Writting
- 
-\section{EXTRACURRICULAR ACTIVITIES}          
-    Member University of Idaho Rock Climbing Team \\
-    Road and mountain biking \\
-    Outdoor Climbing and hiking \\
-    Volunteering at Saturday of Service
+%----------------------------------------
+% Content
+%----------------------------------------
 
-    \pagebreak
-\section{REFERENCES}
-Ray Towry \\
-City of Eprata Recreation/P.R. Director \\
-(509)-754-4601 ext. 151 \\ \\
-Dr. Clinton Jeffery \\
-Senior Design Mentor and Unicon Devloper\\
-(208)-885-4789\\
-jeffery@cs.uidaho.edu \\ \\
-Dr. Axel Krings \\
-Academic Advisor\\
-(208)-885-9052\\
-krings@uidaho.edu
+\begin{document}
+\makecvtitle
 
- 
-\end{resume}
+\section{Education}
+% BA
+\cventry{2010--2015}{Bachelor of Science in Computer
+  Science}{University of Idaho}{Moscow, ID}{\textit{GPA:
+    3.14}}{Relevant Coursework:\vspace{-5mm}\begin{multicols}{2}
+  \begin{itemize}
+  \item Compiler Design
+  \item Data Structures
+  \item Programming Languages
+  \item Technical Writing
+  \item Analysis of Algorithms
+  \item Object Oriented Design
+  \item Operating Systems
+  \item Computer Graphics
+  \item System Software
+  \item Software Engineering
+  \item Database Systems
+  \item Theory of Computation
+  \item Evolutionary Computation
+  \item Video Games \& Evolution
+%  \item Engineering Physics
+  \item Probability \& Statistics
+  \item Linear Algebra
+  \item Differential Equations
+  \item Calculus
+  \item Discrete Math
+  \item Computer Organization \& Architecture
+%  \item Senior Design Project    
+\end{itemize}
+\end{multicols}}% arguments 3 to 6 can be left empty
+
+
+% AA
+\cventry{2008--2010}{Associates in Arts \& Science}{Big Bend Community
+  College}{Moses Lake, WA}{\textit{GPA: 3.70}}{Completed degree concurrently
+  with High School Diploma}
+% arguments 3 to 6 can be left empty
+% Relevant Coursework
+
+\section{Experience}
+
+\cventry{2015--Present}{Unicon Research Assistant}{Dr. Clinton
+  Jeffery}{Moscow, ID}{}{
+  \begin{itemize}
+  \item Remodeled garbage collection to be concurrent.
+  \item Edited existing technical reports.
+  \item Prepared code to be merged into master branch.
+  \end{itemize}}
+%possibly make this description into bullet points
+
+\cventry{Summer 2014--2015}{Student Athlete Tutor}{University of
+  Idaho}{Moscow, ID}{}{Tutored students in:
+  \begin{itemize}
+  \item Math
+  \item Computer Science
+  \item Logic
+  \end{itemize}}
+
+\cventry{Summer 2013}{Pool Manager}{SplashZone City
+  Pool}{Ephrata, WA}{}{
+  \begin{itemize}
+  \item Managed daily pool functions, shift scheduling for 40
+    employees.
+  \item Trained pool staff in lifeguarding skills and safety.
+  \item Reconciled money daily.
+  \item Provided customer service for pool patrons.
+\end{itemize}}
+
+\cventry{Summer 2010--2012}{Lifeguard/Head Lifeguard}{SplashZone City
+  Pool}{Ephrata, WA}{}{
+  \begin{itemize}
+  \item Responded to emergency situations.
+  \item Instructed swimming lessons.
+  \item Promoted to Head Lifeguard.
+    \begin{itemize}
+ %   \item Oversaw Pool Aids.
+    \item Instructed new Lifeguards.
+    \item Helped open \& close pool.
+    \end{itemize}
+  \end{itemize}}
+%research assistant
+
+\section{Skills}
+\begin{cvcolumns}
+  \cvcolumn{Proficient With}{
+    \begin{itemize}
+    \item C
+    \item C++
+    \item Git \& GitHub
+    \item Make
+    \item \LaTeX
+    \item Bash
+    \item Flex
+    \item Bison
+    \end{itemize}
+  }
+  \cvcolumn{Experience With}{           
+    \begin{itemize}
+    \item Java
+    \item Processing
+    \item Python
+    \item Common Lisp
+    \item Unicon
+    \item Agile Development
+    \end{itemize}
+  }
+  \cvcolumn{Interested In}{
+    \begin{itemize}
+    \item Ruby
+    \item SQL
+    \item Objective C
+    \item JavaScript
+    \end{itemize}
+  }
+\end{cvcolumns}
+% Proficient In
+% Expirience with
+% Interested In
+
+\section{Projects}
+
+\cvitem{Unicon Development}{
+  \begin{itemize}
+  \item Added concurrency functionality to the Unicon optimizing compiler.
+  \item Worked with a large codebase.
+  \item Presented a poster \& gave a technical presentation at Engineering Expo 2015.
+  \end{itemize}}\vspace{-3mm}
+
+\cvitem{Evolutionary Computation}{
+  \begin{itemize}
+  \item Implemented evolutionary algorithms using C++11.
+  \item Utilized basic hill climbing, genetic algorithms, and genetic
+    programming to solve problems including function regression,
+    k--satisfiability solver, simple cipher solver.
+  \item Optimized using bit manipulation.
+\end{itemize}}\vspace{-3mm}
+
+\cvitem{EvolveTD}{
+  \begin{itemize}
+  \item Collaborated between computer scientists and biologists to
+    create a tower defense game with realistic evolution of the
+    attacking creatures.
+  \item Developed a scent communication between the creatures.
+  \item Conducted a hypothesis test and created an educational activity.
+\end{itemize}}\vspace{-3mm}
+
+\cvitem{Swords \& Sorcery}{
+  \begin{itemize}
+  \item Created a computerized version of Swords \& Sorcery.
+  \item Collaborated with 17 people using agile development methods.
+  \item Developed recursive algorithm to show users how far they could
+    move over varying terrain types.
+  \item Created class diagrams and use cases.
+  \item Wrote technical documentation.
+\end{itemize}}\vspace{-3mm}
+
+\cvitem{120++ Compiler}{
+  \begin{itemize}
+  \item Created a compiler for a subset of C++ called 120++.
+  \item Used C, flex, \& bison.
+  \item Performed lexical, syntax, \& semantic analysis.
+\end{itemize}}\vspace{-3mm}
+
+% Uniconc poster and presentation
+% Paper with Dr. J
+% EvoComp
+% 404
+% Software Engineering
+
+%\section{Experience}
+%research assistant 
+%tutor
+%Pool managar
+
+
+\section{Involvement}
+\cvlistitem{Volunteered for Saturday of Service at a children's carnival.}
+\cvlistitem{Volunteered to convert the Kibbie Dome from football to basketball.}
+\cvlistitem{Volunteered to set up for Finals Fest concert.}
+\cvlistitem{Member of University Climbing Team.}
+%climbing club
+%volunteer work with club
+%saturday of service
+
+
+
+
+
 \end{document}
+
+
